@@ -1,0 +1,29 @@
+# Ignora arquivos executáveis e objetos binários
+# O binário principal gerado pelo seu compilador
+# (o nome pode variar dependendo do seu sistema operacional)
+*.out
+*.exe
+main
+main.exe
+
+# Ignora arquivos de objeto (.o) gerados pelo compilador
+# Esses são os arquivos temporários criados a partir do seu código-fonte
+*.o
+
+# Ignora arquivos de depuração e de editor
+# Arquivos de configurações do Visual Studio Code
+.vscode/
+# Arquivos do Visual Studio
+.vs/
+*.obj
+*.pdb
+*.suo
+
+# Ignora arquivos de cache e do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos de log e backups
+*.log
+*.bak
+*~
