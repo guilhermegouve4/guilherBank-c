@@ -18,34 +18,3 @@ Este é um projeto de um sistema de caixa eletrônico interativo desenvolvido em C
 
 * **Linguagem:** C
 * **Bibliotecas Padrão:** `stdio.h`, `stdlib.h`, `locale.h`, `time.h`
-
----
-
-## Como Compilar e Executar
-
-Para compilar o programa, você precisará de um compilador C como o GCC. Navegue até a pasta raiz do projeto e execute o seguinte comando no terminal:
-
-```bash
-gcc -I./include ./src/*.c -o main.exe
-Após a compilação, execute o programa com:
-
-Bash
-
-./main.exe
-Observação: O comando gcc acima assume que seus arquivos .c estão na pasta src/ e seus arquivos .h estão na pasta include/.
-
-Estrutura do Projeto
-O projeto segue uma estrutura modular padrão, com o código-fonte (.c) e os arquivos de cabeçalho (.h) separados:
-
-Desafio 1/
-??? src/
-?   ??? atm.c
-?   ??? bills.c
-?   ??? main.c
-?   ??? menu.c
-?   ??? tools.c
-??? include/
-    ??? atm.h
-    ??? bills.h
-    ??? menu.h
-    ??? tools.h
