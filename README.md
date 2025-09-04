@@ -126,15 +126,15 @@ Este algoritmo garante o **menor número possível de cédulas** para qualquer v
 ## Validações Implementadas
 
 ### Validações de Entrada
-- ? Verificação de tipos numéricos
-- ? Valores negativos ou zero
-- ? Limpeza de buffer para entradas inválidas
+- Verificação de tipos numéricos
+- Valores negativos ou zero
+- Limpeza de buffer para entradas inválidas
 
 ### Validações de Negócio
-- ? Verificação de saldo suficiente
-- ? Controle de limite especial
-- ? Confirmação para uso de limite
-- ? Cálculos precisos de distribuição
+- Verificação de saldo suficiente
+- Controle de limite especial
+- Confirmação para uso de limite
+- Cálculos precisos de distribuição
 
 ## Features Adicionais
 
@@ -172,9 +172,9 @@ Este algoritmo garante o **menor número possível de cédulas** para qualquer v
 ## Autor
 
 **Guilherme Augusto Gouvea**  
-?? Estudante de Análise e Desenvolvimento de Sistemas  
-?? Unicesumar - Londrina  
-????? Prof. Anderson Iwazaki
+  Estudante de Análise e Desenvolvimento de Sistemas  
+   Unicesumar - Londrina  
+     Prof. Anderson Iwazaki
 
 ## Disciplinas
 
@@ -193,4 +193,4 @@ Este projeto foi desenvolvido para fins acadêmicos como parte do curso de ADS d
 - [Unicesumar](https://www.unicesumar.edu.br/)
 
 ---
-*Desenvolvido com ?? para aprendizado em programação C*
+*Desenvolvido para aprendizado em programação C*
