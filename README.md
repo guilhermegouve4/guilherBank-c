@@ -31,18 +31,18 @@ O sistema trabalha com as seguintes cédulas do Real brasileiro:
 
 ```
 projeto-caixa-eletronico/
-??? src/
-?   ??? main.c          # Função principal e controle do programa
-?   ??? atm.c           # Lógica de saque e validações
-?   ??? bills.c         # Algoritmo de distribuição de notas
-?   ??? menu.c          # Interface do usuário
-?   ??? tools.c         # Funções utilitárias
-??? include/
-?   ??? atm.h           # Declarações para operações ATM
-?   ??? bills.h         # Declarações para distribuição de notas
-?   ??? menu.h          # Declarações do menu
-?   ??? tools.h         # Declarações de utilitários
-??? README.md
+--- src/
+|   --- main.c          # Função principal e controle do programa
+|   --- atm.c           # Lógica de saque e validações
+|   --- bills.c         # Algoritmo de distribuição de notas
+|   --- menu.c          # Interface do usuário
+|   --- tools.c         # Funções utilitárias
+--- include/
+|   --- atm.h           # Declarações para operações ATM
+|   --- bills.h         # Declarações para distribuição de notas
+|   --- menu.h          # Declarações do menu
+|   --- tools.h         # Declarações de utilitários
+--- README.md
 ```
 
 ## Como Compilar e Executar
