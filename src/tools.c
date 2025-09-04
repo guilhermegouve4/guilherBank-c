@@ -29,10 +29,13 @@ void print_greeting_time() {
     local_time = localtime(&current_time);
 
     if (local_time->tm_hour >= 6 && local_time->tm_hour < 12) {
-        printf("Bom dia!");
+        printf("Tenha um excelente dia!");
+        line_break(1);
     } else if (local_time->tm_hour >= 12 && local_time->tm_hour < 18) {
-        printf("Boa tarde!");
+        printf("Tenha uma excelente tarde!");
+        line_break(1);
     } else {
-        printf("Boa noite!");
+        printf("Tenha uma excelente noite!");
+        line_break(1);
     }
 }

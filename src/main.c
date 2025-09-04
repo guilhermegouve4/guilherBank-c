@@ -6,51 +6,42 @@
 #include "../include/tools.h"
 #include "../include/bills.h"
 #include "../include/menu.h"
-#include "../include/tools.h"
 
 void line_break(int n);
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
     float current_balance = 1500;
-    float special_limit = 2300;
-    int user_choice;
+    const float special_limit = 2300;
+    int menu_choice;
 
     do {
-        printf("Seja bem-vindo ao GuilherBank!");
-        line_break(4);
-        printf("Seu saldo é de R$:%.2f", current_balance);
-        line_break(2);
-        printf("Digite 1 para prosseguir com o saque");
-        line_break(1);
-        printf("Digite 2 para sair");
-        line_break(1);
-        scanf("%d", &user_choice);
+        menu_choice = show_menu(&current_balance);
 
-        switch (user_choice) {
+        switch(menu_choice) {
             case 1:
                 printf("Você escolheu:");
-                line_break(1);
-                printf("Efetuar saque");
-                line_break(4);
+                line_break(2);
+                printf("SAQUE");
+                pause_and_clear();
+                do_withdraw(&current_balance, &current_balance);
                 break;
             case 2:
-                printf("Muito obrigado por utilizar os nossos serviços");
+                printf("O GuilherBank agradece a preferência!");
                 line_break(2);
-                printf("GuilherBank te deseja um bom/boa dia/tarde/noite");
+                print_greeting_time();
                 line_break(6);
-                system("pause");
+                pause_and_clear();
                 break;
             default:
-                printf("ENTRADA INVÁLIDA!");
+                printf("ENTRADA INCORRETA!");
                 line_break(2);
-                printf("Por favor digite 1 ou 2");
-                line_break(6);
-                system("pause");
-                system("cls");
-                break;       
+                printf("Por favor selecione uma opção válida");
+                pause_and_clear();
+                break;
         }
+    } while(menu_choice != 2);
 
-    } while (user_choice != 2);
+    return 0;
     
 }
