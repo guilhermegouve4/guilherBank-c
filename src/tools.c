@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-#include "tools.h"
+#include "../include/tools.h"
 
 void line_break(int num_of_lines) {
     int count = 0;

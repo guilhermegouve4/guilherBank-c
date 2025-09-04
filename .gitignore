@@ -2,7 +2,6 @@
 # O binário principal gerado pelo seu compilador
 # (o nome pode variar dependendo do seu sistema operacional)
 *.out
-*.exe
 main
 main.exe
 

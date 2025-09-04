@@ -6,13 +6,14 @@
 #include "../include/tools.h"
 #include "../include/bills.h"
 #include "../include/menu.h"
+#include "../include/atm.h"
 
 void line_break(int n);
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
     float current_balance = 1500;
-    const float special_limit = 2300;
+    float special_limit = 2300;
     int menu_choice;
 
     do {
@@ -23,8 +24,9 @@ int main() {
                 printf("Você escolheu:");
                 line_break(2);
                 printf("SAQUE");
+                line_break(6);
                 pause_and_clear();
-                do_withdraw(&current_balance, &current_balance);
+                do_withdraw(&current_balance, &special_limit);
                 break;
             case 2:
                 printf("O GuilherBank agradece a preferência!");

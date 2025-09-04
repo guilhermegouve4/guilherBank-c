@@ -15,9 +15,10 @@ int show_menu(const float *current_balance) {
         printf("1. Realizar saque");
         line_break(1);
         printf("2. Sair");
-        line_break(1);
+        line_break(3);
         scanf("%d", &user_choice);
         clear_buffer();
+        system("cls");
 
     return user_choice;
 }

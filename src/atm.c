@@ -33,10 +33,12 @@ void do_withdraw(float *current_balance, float *special_limit) {
                 printf("Quantia inválida!");
                 line_break(1);
                 printf("Por favor insira um número positivo.");
+                line_break(2);
                 desirable_withdraw = 0;
                 pause_and_clear();
             } else if (desirable_withdraw > (*current_balance + *special_limit)) {
                 desirable_withdraw = 0;
+                system("cls");
                 printf("Infelizmente seu saldo e limite são insuficientes para esta transação.");
                 pause_and_clear();
             }
@@ -45,11 +47,22 @@ void do_withdraw(float *current_balance, float *special_limit) {
 
     if (desirable_withdraw <= *current_balance) {
         *current_balance -= desirable_withdraw;
+        system("cls");
         printf("Saque de R$%.2f efetuado com sucesso!", desirable_withdraw);
         line_break(1);
         distribute_bills((int)desirable_withdraw);
+        line_break(2);
+        printf("Por favor, retire suas notas no compartimento abaixo.");
+        line_break(2);
+        pause_and_clear();
+        printf("O GuilherBank agradece a preferência!");
+        line_break(2);
+        print_greeting_time();
+        line_break(6);
+        pause_and_clear();
     } else {
         do {
+            system("cls");
             printf("O saldo em sua conta é insuficiente para realizar o saque.");
             line_break(2);
             printf("1. Utilizar limite especial");
@@ -71,11 +84,24 @@ void do_withdraw(float *current_balance, float *special_limit) {
                     case 1:
                         *special_limit -= desirable_withdraw - *current_balance;
                         *current_balance = 0;
+                        system("cls");
                         printf("Saque de R$%.2f efetuado com sucesso!", desirable_withdraw);
                         line_break(1);
                         distribute_bills((int)desirable_withdraw);
+                        line_break(2);
+                        printf("Por favor, retire suas notas no compartimento abaixo.");
+                        line_break(2);
+                        pause_and_clear();
+                        printf("O GuilherBank agradece a preferência!");
+                        line_break(2);
+                        print_greeting_time();
+                        line_break(6);
+                        pause_and_clear();
                         break;
                     case 2:
+                        system("cls");
+                        printf("Operação cancelada!");
+                        line_break(2);
                         printf("O GuilherBank agradece a preferência!");
                         line_break(2);
                         print_greeting_time();
