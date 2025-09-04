@@ -1,29 +1,29 @@
-# Sistema de Caixa Eletrônico - GuilherBank
+# Sistema de Caixa EletrÃ´nico - GuilherBank
 
-Um simulador de caixa eletrônico desenvolvido em C como parte do curso de **Análise e Desenvolvimento de Sistemas** da **Unicesumar (Londrina)**.
+Um simulador de caixa eletrÃ´nico desenvolvido em C como parte do curso de **AnÃ¡lise e Desenvolvimento de Sistemas** da **Unicesumar (Londrina)**.
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido para as disciplinas de **Algoritmos e Lógica de Programação** e **Linguagens de Programação**, ministradas pelo professor **Anderson Iwazaki**. O sistema simula as operações básicas de um caixa eletrônico, implementando algoritmos de distribuição otimizada de cédulas e controle de saldo com limite especial.
+Este projeto foi desenvolvido para as disciplinas de **Algoritmos e LÃ³gica de ProgramaÃ§Ã£o** e **Linguagens de ProgramaÃ§Ã£o**, ministradas pelo professor **Anderson Iwazaki**. O sistema simula as operaÃ§Ãµes bÃ¡sicas de um caixa eletrÃ´nico, implementando algoritmos de distribuiÃ§Ã£o otimizada de cÃ©dulas e controle de saldo com limite especial.
 
 ## Funcionalidades
 
 ### Principais Features
-- **Consulta de Saldo**: Visualização do saldo atual da conta
-- **Operação de Saque**: Retirada de valores com validações
-- **Limite Especial**: Sistema de crédito adicional de R$ 2.300,00
-- **Distribuição Otimizada de Notas**: Algoritmo que minimiza a quantidade de cédulas
-- **Interface Interativa**: Menu intuitivo em português
-- **Validações Robustas**: Tratamento de entradas inválidas
+- **Consulta de Saldo**: VisualizaÃ§Ã£o do saldo atual da conta
+- **OperaÃ§Ã£o de Saque**: Retirada de valores com validaÃ§Ãµes
+- **Limite Especial**: Sistema de crÃ©dito adicional de R$ 2.300,00
+- **DistribuiÃ§Ã£o Otimizada de Notas**: Algoritmo que minimiza a quantidade de cÃ©dulas
+- **Interface Interativa**: Menu intuitivo em portuguÃªs
+- **ValidaÃ§Ãµes Robustas**: Tratamento de entradas invÃ¡lidas
 
-### Denominações Suportadas
-O sistema trabalha com as seguintes cédulas do Real brasileiro:
-- R$ 200,00 (Lobo-guará)
+### DenominaÃ§Ãµes Suportadas
+O sistema trabalha com as seguintes cÃ©dulas do Real brasileiro:
+- R$ 200,00 (Lobo-guarÃ¡)
 - R$ 100,00 (Peixe)
-- R$ 50,00 (Onça-pintada)
-- R$ 20,00 (Mico-leão-dourado)
+- R$ 50,00 (OnÃ§a-pintada)
+- R$ 20,00 (Mico-leÃ£o-dourado)
 - R$ 10,00 (Arara)
-- R$ 5,00 (Garça)
+- R$ 5,00 (GarÃ§a)
 - R$ 2,00 (Tartaruga)
 - R$ 1,00 (Beija-flor)
 
@@ -32,28 +32,28 @@ O sistema trabalha com as seguintes cédulas do Real brasileiro:
 ```
 projeto-caixa-eletronico/
 ??? src/
-?   ??? main.c          # Função principal e controle do programa
-?   ??? atm.c           # Lógica de saque e validações
-?   ??? bills.c         # Algoritmo de distribuição de notas
-?   ??? menu.c          # Interface do usuário
-?   ??? tools.c         # Funções utilitárias
+?   ??? main.c          # FunÃ§Ã£o principal e controle do programa
+?   ??? atm.c           # LÃ³gica de saque e validaÃ§Ãµes
+?   ??? bills.c         # Algoritmo de distribuiÃ§Ã£o de notas
+?   ??? menu.c          # Interface do usuÃ¡rio
+?   ??? tools.c         # FunÃ§Ãµes utilitÃ¡rias
 ??? include/
-?   ??? atm.h           # Declarações para operações ATM
-?   ??? bills.h         # Declarações para distribuição de notas
-?   ??? menu.h          # Declarações do menu
-?   ??? tools.h         # Declarações de utilitários
+?   ??? atm.h           # DeclaraÃ§Ãµes para operaÃ§Ãµes ATM
+?   ??? bills.h         # DeclaraÃ§Ãµes para distribuiÃ§Ã£o de notas
+?   ??? menu.h          # DeclaraÃ§Ãµes do menu
+?   ??? tools.h         # DeclaraÃ§Ãµes de utilitÃ¡rios
 ??? README.md
 ```
 
 ## Como Compilar e Executar
 
-### Pré-requisitos
+### PrÃ©-requisitos
 - Compilador GCC instalado
 - Sistema operacional Windows (para comandos `cls` e `pause`)
 
-### Compilação
+### CompilaÃ§Ã£o
 ```bash
-# Navegar para o diretório do projeto
+# Navegar para o diretÃ³rio do projeto
 cd projeto-caixa-eletronico
 
 # Compilar todos os arquivos
@@ -63,9 +63,9 @@ gcc src/*.c -I include -o caixa_eletronico.exe
 ./caixa_eletronico.exe
 ```
 
-### Compilação Alternativa (Makefile)
+### CompilaÃ§Ã£o Alternativa (Makefile)
 ```makefile
-# Criar um Makefile para automatizar a compilação
+# Criar um Makefile para automatizar a compilaÃ§Ã£o
 CC=gcc
 CFLAGS=-Wall -Wextra -std=c99
 SRCDIR=src
@@ -83,20 +83,20 @@ clean:
 ## Como Usar
 
 ### Fluxo Principal
-1. **Inicialização**: O sistema inicia com saldo de R$ 1.500,00 e limite especial de R$ 2.300,00
+1. **InicializaÃ§Ã£o**: O sistema inicia com saldo de R$ 1.500,00 e limite especial de R$ 2.300,00
 2. **Menu Principal**: Escolha entre realizar saque ou sair
-3. **Operação de Saque**: 
+3. **OperaÃ§Ã£o de Saque**: 
    - Digite o valor desejado
    - Sistema verifica disponibilidade de fundos
-   - Se necessário, oferece uso do limite especial
+   - Se necessÃ¡rio, oferece uso do limite especial
    - Distribui as notas de forma otimizada
-4. **Finalização**: Mensagem de agradecimento com saudação baseada no horário
+4. **FinalizaÃ§Ã£o**: Mensagem de agradecimento com saudaÃ§Ã£o baseada no horÃ¡rio
 
 ### Exemplo de Uso
 ```
 === EXEMPLO DE SAQUE ===
 Valor solicitado: R$ 287,00
-Distribuição:
+DistribuiÃ§Ã£o:
 - 1 nota de R$ 200,00
 - 1 nota de R$ 50,00
 - 1 nota de R$ 20,00
@@ -105,12 +105,12 @@ Distribuição:
 - 1 nota de R$ 2,00
 ```
 
-## Algoritmo de Distribuição
+## Algoritmo de DistribuiÃ§Ã£o
 
-O sistema utiliza um **algoritmo guloso** para distribuição otimizada:
+O sistema utiliza um **algoritmo guloso** para distribuiÃ§Ã£o otimizada:
 
 ```c
-// Pseudocódigo do algoritmo
+// PseudocÃ³digo do algoritmo
 while (valor_restante > 0) {
     for (cada_cedula_em_ordem_decrescente) {
         while (valor_restante >= valor_cedula) {
@@ -121,76 +121,76 @@ while (valor_restante > 0) {
 }
 ```
 
-Este algoritmo garante o **menor número possível de cédulas** para qualquer valor solicitado.
+Este algoritmo garante o **menor nÃºmero possÃ­vel de cÃ©dulas** para qualquer valor solicitado.
 
-## Validações Implementadas
+## ValidaÃ§Ãµes Implementadas
 
-### Validações de Entrada
-- ? Verificação de tipos numéricos
+### ValidaÃ§Ãµes de Entrada
+- ? VerificaÃ§Ã£o de tipos numÃ©ricos
 - ? Valores negativos ou zero
-- ? Limpeza de buffer para entradas inválidas
+- ? Limpeza de buffer para entradas invÃ¡lidas
 
-### Validações de Negócio
-- ? Verificação de saldo suficiente
+### ValidaÃ§Ãµes de NegÃ³cio
+- ? VerificaÃ§Ã£o de saldo suficiente
 - ? Controle de limite especial
-- ? Confirmação para uso de limite
-- ? Cálculos precisos de distribuição
+- ? ConfirmaÃ§Ã£o para uso de limite
+- ? CÃ¡lculos precisos de distribuiÃ§Ã£o
 
-## ?? Features Adicionais
+## Features Adicionais
 
-### Saudações Inteligentes
+### SaudaÃ§Ãµes Inteligentes
 ```c
-// Baseado no horário do sistema
+// Baseado no horÃ¡rio do sistema
 06:00 - 11:59: "Tenha um excelente dia!"
 12:00 - 17:59: "Tenha uma excelente tarde!"
 18:00 - 05:59: "Tenha uma excelente noite!"
 ```
 
-### Interface Amigável
-- Mensagens em português brasileiro
+### Interface AmigÃ¡vel
+- Mensagens em portuguÃªs brasileiro
 - Feedback visual com quebras de linha
 - Comandos de pausa para melhor UX
-- Limpeza de tela entre operações
+- Limpeza de tela entre operaÃ§Ãµes
 
 ## Conceitos Aplicados
 
-### Programação Estruturada
-- **Modularização**: Separação em múltiplos arquivos
-- **Headers**: Organização de declarações
-- **Funções**: Responsabilidades bem definidas
+### ProgramaÃ§Ã£o Estruturada
+- **ModularizaÃ§Ã£o**: SeparaÃ§Ã£o em mÃºltiplos arquivos
+- **Headers**: OrganizaÃ§Ã£o de declaraÃ§Ãµes
+- **FunÃ§Ãµes**: Responsabilidades bem definidas
 
 ### Estruturas de Dados
-- **Ponteiros**: Passagem por referência para saldo e limite
-- **Arrays implícitos**: Denominações de cédulas
-- **Estruturas condicionais**: Validações e fluxos
+- **Ponteiros**: Passagem por referÃªncia para saldo e limite
+- **Arrays implÃ­citos**: DenominaÃ§Ãµes de cÃ©dulas
+- **Estruturas condicionais**: ValidaÃ§Ãµes e fluxos
 
 ### Algoritmos
-- **Algoritmo Guloso**: Distribuição otimizada
-- **Validação de Entrada**: Tratamento robusto
-- **Controle de Fluxo**: Loops e condições
+- **Algoritmo Guloso**: DistribuiÃ§Ã£o otimizada
+- **ValidaÃ§Ã£o de Entrada**: Tratamento robusto
+- **Controle de Fluxo**: Loops e condiÃ§Ãµes
 
 ## Autor
 
 **Guilherme Augusto Gouvea**  
-?? Estudante de Análise e Desenvolvimento de Sistemas  
+?? Estudante de AnÃ¡lise e Desenvolvimento de Sistemas  
 ?? Unicesumar - Londrina  
 ????? Prof. Anderson Iwazaki
 
 ## Disciplinas
 
-- **Algoritmos e Lógica de Programação**
-- **Linguagens de Programação**
+- **Algoritmos e LÃ³gica de ProgramaÃ§Ã£o**
+- **Linguagens de ProgramaÃ§Ã£o**
 
-## Licença
+## LicenÃ§a
 
-Este projeto foi desenvolvido para fins acadêmicos como parte do curso de ADS da Unicesumar.
+Este projeto foi desenvolvido para fins acadÃªmicos como parte do curso de ADS da Unicesumar.
 
 ---
 
-### Links Úteis
-- [Documentação da Linguagem C](https://en.cppreference.com/w/c)
+### Links Ãšteis
+- [DocumentaÃ§Ã£o da Linguagem C](https://en.cppreference.com/w/c)
 - [GCC Compiler](https://gcc.gnu.org/)
 - [Unicesumar](https://www.unicesumar.edu.br/)
 
 ---
-*Desenvolvido com ?? para aprendizado em programação C*
+*Desenvolvido com ?? para aprendizado em programaÃ§Ã£o C*
