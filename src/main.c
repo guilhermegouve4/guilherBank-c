@@ -39,6 +39,7 @@ int main() {
                 printf("ENTRADA INCORRETA!");
                 line_break(2);
                 printf("Por favor selecione uma opção válida");
+                line_break(6);
                 pause_and_clear();
                 break;
         }
