@@ -40,6 +40,7 @@ void do_withdraw(float *current_balance, float *special_limit) {
                 desirable_withdraw = 0;
                 system("cls");
                 printf("Infelizmente seu saldo e limite são insuficientes para esta transação.");
+                line_break(6);
                 pause_and_clear();
             }
         }
